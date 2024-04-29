@@ -13,7 +13,7 @@ public class Enrollments {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
 
-    @ManyToMany
+    @OneToMany
     private List<Student> students;
 
     @ManyToOne
